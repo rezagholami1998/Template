@@ -227,3 +227,10 @@ img {
 .button-animation:hover span {
   animation: none;
 }
+@media screen and (max-width: 400px) {
+  .fadeInRight,
+  .slideInLeft,
+  .slideInRight {
+    animation: none;
+  }
+}

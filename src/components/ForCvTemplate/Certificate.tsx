@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 const certificateItem = [
   "کارشناسی مهندسی کامپیوتر دانشگاه تربت حیدریه",
   "سرتیفیکیت کالج توربو فرانت شرکت نرم افزاری پارت",
-  "سرتیفیکیت دوره فنی حرفه ای Ciw موسسه آموزشی راشد احمدآباد ",
+  "سرتیفیکیت دوره فنی حرفه ای Ciw موسسه راشد",
 ];
 const Certificate = () => {
   const { ref, inView } = useInView({
@@ -50,6 +50,8 @@ const Certificate = () => {
       <Box
         sx={{
           p: "50px 0",
+          width: "100%",
+          overflow: "hidden",
         }}
       >
         <List
@@ -59,8 +61,8 @@ const Certificate = () => {
           {certificateItem.map((text, i) => (
             <motion.div
               key={i}
-              initial={{ x: -300 }}
-              animate={inView ? { x: 0 } : { x: -300 }}
+              initial={{ x: -350 }}
+              animate={inView ? { x: 0 } : { x: -350 }}
               transition={{ duration: 1, delay: i * 0.5 }}
               style={{ display: "flex", gap: "8px", alignItems: "flex-start" }}
             >
