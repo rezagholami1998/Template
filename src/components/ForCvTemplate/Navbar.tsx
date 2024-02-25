@@ -27,25 +27,21 @@ const navItems = [
   },
   {
     id: "2",
-
     destination: "#aboutMe",
     navName: "درباره من",
   },
   {
     id: "3",
-
     destination: "#skills",
     navName: "مهارت ها",
   },
   {
     id: "4",
-
     destination: "#certificates",
     navName: "گواهینامه ها",
   },
   {
     id: "5",
-
     destination: "#",
     navName: "صفحه اصلی",
   },
