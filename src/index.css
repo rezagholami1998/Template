@@ -1,6 +1,229 @@
-/* :root {
-
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #c778dd rgba(0, 0, 0, 0.5);
+}
+@layer base {
+  @font-face {
+    font-family: YekanBakh;
+    src: url("assets/fonts/YekanBakh-Medium.woff2") format("woff2");
+  }
 }
 body {
-
-} */
+  direction: rtl;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "YekanBakh";
+  background-color: #282c33;
+}
+img {
+  max-width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 100px;
+}
+@keyframes slideInLeft {
+  from {
+    visibility: visible;
+    transform: translate3d(-70%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  animation: slideInLeft 2s;
+}
+@keyframes slideInRight {
+  from {
+    visibility: visible;
+    transform: translate3d(70%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  animation: slideInRight 2s;
+}
+@keyframes slideInRightMin {
+  from {
+    visibility: visible;
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRightMin {
+  animation: slideInRightMin 1.5s infinite alternate;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation: fadeIn 1.5s infinite;
+}
+@keyframes slideInUp {
+  from {
+    visibility: visible;
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
+}
+.slideInUp {
+  animation: slideInUp 1.5s infinite alternate;
+}
+@keyframes textShadow {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 3px 2px 1px #c778dd;
+  }
+}
+.textShadow {
+  animation: textShadow 1s infinite alternate;
+}
+.index-module_type__E-SaG::after {
+  content: none !important;
+}
+.index-module_type__E-SaG::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  vertical-align: sub;
+  display: inline-block;
+  background: #c778dd;
+  animation: index-module_cursor__PQg0P 1s infinite step-start;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInRight {
+  animation: fadeInRight 2s;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInLeft {
+  animation: fadeInLeft 2s;
+}
+.button-animation {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: "500";
+  position: relative;
+  font-family: inherit;
+  display: inline-block;
+  background: transparent;
+  text-transform: uppercase;
+}
+.button-animation span {
+  display: block;
+  position: absolute;
+}
+.button-animation span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  animation: btn-anim1 2s linear infinite;
+  background: linear-gradient(90deg, transparent, #c778dd);
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.button-animation span:nth-child(2) {
+  right: 0;
+  width: 3px;
+  top: -100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #c778dd);
+  animation: btn-anim2 2s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.button-animation span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #c778dd);
+  animation: btn-anim3 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.button-animation span:nth-child(4) {
+  left: 0;
+  width: 3px;
+  height: 100%;
+  bottom: -100%;
+  background: linear-gradient(360deg, transparent, #c778dd);
+  animation: btn-anim4 2s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.button-animation:hover {
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 6px 1px #c778dd;
+}
+.button-animation:hover span {
+  animation: none;
+}
