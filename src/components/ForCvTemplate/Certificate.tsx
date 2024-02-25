@@ -6,10 +6,10 @@ import {
   ListItemText,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import TaskAltIcon from "@mui/icons-material/TaskAlt";
+import TickIcon from "../../assets/images/Tick.svg";
 import { useInView } from "react-intersection-observer";
 const certificateItem = [
-  "کارشناسی مهندسی کامپیوتر دانشگاه تربت حیدریه",
+  "کارشناسی مهندسی کامپیوتر دانشگاه دولتی تربت حیدریه",
   "سرتیفیکیت کالج توربو فرانت شرکت نرم افزاری پارت",
   "سرتیفیکیت دوره فنی حرفه ای Ciw موسسه راشد",
 ];
@@ -48,16 +48,14 @@ const Certificate = () => {
         <Box sx={{ width: "100%", height: "1px", background: "#C778DD" }}></Box>
       </Box>
       <Box
+        ref={ref}
         sx={{
           p: "50px 0",
           width: "100%",
           overflow: "hidden",
         }}
       >
-        <List
-          ref={ref}
-          sx={{ display: "flex", flexDirection: "column", gap: "20px" }}
-        >
+        <List sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           {certificateItem.map((text, i) => (
             <motion.div
               key={i}
@@ -74,8 +72,9 @@ const Certificate = () => {
                 }}
               >
                 <Box
-                  component={TaskAltIcon}
-                  sx={{ color: "#C778DD", fontSize: "1.8rem" }}
+                  component="img"
+                  src={TickIcon}
+                  sx={{ color: "#C778DD", width: "100%" }}
                 />
               </ListItemIcon>
               <ListItemText

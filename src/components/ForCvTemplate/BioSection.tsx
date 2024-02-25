@@ -57,7 +57,7 @@ const BioSection = () => {
                   fontSize: "inherit",
                 }}
               >
-                &nbsp;رضاغلامی &nbsp;
+                &nbsp;رضاغلامی&nbsp;
               </Typography>
               هستم کارشناس کامپیوتر
               <br />و توسعه دهنده
@@ -171,7 +171,7 @@ const BioSection = () => {
                 letterSpacing: "5px",
               }}
             />
-            <Box sx={{ p: "8px", backgroundColor: "#C778DD" }} />
+            <Box sx={{ p: "8px", backgroundColor: "#fad201" }} />
           </Box>
         </Grid>
       </Grid>

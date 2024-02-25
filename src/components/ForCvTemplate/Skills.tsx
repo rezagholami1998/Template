@@ -1,5 +1,5 @@
 import { Typography, Box, Grid } from "@mui/material";
-import GroupShape from "@/assets/images/Group-shape.png";
+import GroupShape from "@/assets/images/Group-shape.svg";
 const Skills = () => {
   return (
     <>

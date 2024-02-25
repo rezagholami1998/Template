@@ -102,7 +102,7 @@ const Footer = () => {
           width: "1px",
           height: "70px",
           margin: "0 auto",
-          background: "#C778DD",
+          background: "#fad201",
         }}
       ></Box>
       <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
@@ -112,14 +112,14 @@ const Footer = () => {
           sx={{
             mt: "20px",
             width: "100%",
-            color: "#ABB2BF",
+            color: "#fff",
             maxWidth: "250px",
-            border: "1px solid #C778DD",
+            border: "1px solid #fad201",
             "&:hover": {
-              border: "1px solid #C778DD",
+              border: "1px solid #fad201",
               transition: "all 0.2s ease-in-out",
               color: "#fff",
-              boxShadow: "0px 0px 6px 1px #c778dd",
+              boxShadow: "0px 0px 6px 1px #fad201",
             },
           }}
         >
