@@ -1,20 +1,19 @@
-import './index.css'
-import React from 'react'
-import App from './App.tsx'
-import ReactDOM from 'react-dom/client'
-import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
+import "./index.css";
+import React from "react";
+import App from "./App.tsx";
+import ReactDOM from "react-dom/client";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 /////////////////////////////////////////////////////////////////////
 const theme = createTheme({
   typography: {
-    fontFamily:
-      'YekanBakh',
-    }
-  })
+    fontFamily: "YekanBakh",
+  },
+});
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <App />
+      <App />
     </ThemeProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
