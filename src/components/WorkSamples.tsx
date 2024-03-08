@@ -276,7 +276,7 @@ const WorkSamples = () => {
                       overflow: "hidden",
                       textAlign: "right",
                       position: "relative",
-                      width: { xs: "90px", sm: "128px" },
+                      width: { xs: "92px", sm: "128px" },
                       height: { xs: "215px", sm: "280px" },
                       borderRadius: { xs: "7px", sm: "12px" },
                       margin: { xs: "8px auto 0", sm: "10px auto 0" },
@@ -293,7 +293,7 @@ const WorkSamples = () => {
                         height: "100%",
                         objectFit: "cover",
                         objectPosition: " top center",
-                        transition: "all 5s ease-in-out",
+                        transition: "all 7s ease-in-out",
                       }}
                     />
                   </Box>
@@ -332,7 +332,7 @@ const WorkSamples = () => {
                         padding: "15px",
                         objectFit: "cover",
                         objectPosition: " top center",
-                        transition: "all 2s ease-in-out",
+                        transition: "all 4s ease-in-out",
                       }}
                     />
                   </Box>
