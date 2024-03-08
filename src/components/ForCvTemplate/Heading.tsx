@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-const Heading = ({ title, borderWidth = "0",id }) => {
+const Heading = ({ title = "", borderWidth = "0", id = "" }) => {
   return (
     <Box id={id} sx={{ display: "flex", alignItems: "center", gap: "16px" }}>
       <Typography

@@ -72,7 +72,12 @@ const workSamplesItems = [
     img: ClickDigikala,
     link: "https://clickmis.net/digikala",
     imgResponsive: DigikalaResponsive,
-    pages: ["دیجی کالا", "صفحه 404", "راهنمای خودآموز و مستندات"],
+    pages: [
+      "دیجی کالا",
+      "صفحه 404",
+      "محتوای مستندات Api",
+      "راهنمای خودآموز و مستندات",
+    ],
   },
 ];
 const WorkSamples = () => {
@@ -168,7 +173,7 @@ const WorkSamples = () => {
                   gridTemplateColumns: {
                     xs: "repeat(2,1fr)",
                     sm: "repeat(3,1fr)",
-                    md: workSample.pages.length <= 3 ? "1fr" : "repeat(2,1fr)",
+                    md: workSample.pages.length <= 4 ? "1fr" : "repeat(2,1fr)",
                   },
                 }}
               >
