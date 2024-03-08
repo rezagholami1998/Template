@@ -32,16 +32,21 @@ const navItems = [
   },
   {
     id: "3",
+    destination: "#workSamples",
+    navName: "نمونه کارها",
+  },
+  {
+    id: "4",
     destination: "#skills",
     navName: "مهارت ها",
   },
   {
-    id: "4",
+    id: "5",
     destination: "#certificates",
     navName: "گواهینامه ها",
   },
   {
-    id: "5",
+    id: "6",
     destination: "#",
     navName: "صفحه اصلی",
   },
@@ -127,7 +132,7 @@ const Navbar = (props: Props) => {
             edge="start"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
-            sx={{ display: { sm: "none" }, pr: "16px" }}
+            sx={{ display: { md: "none" }, pr: "16px" }}
           >
             <Box
               component="img"
@@ -135,7 +140,7 @@ const Navbar = (props: Props) => {
               sx={{ width: "30px", pt: "4px" }}
             ></Box>
           </IconButton>
-          <Box sx={{ display: { xs: "none", sm: "flex" }, gap: "16px" }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, gap: "16px" }}>
             {navItems.reverse().map((item) => (
               <Button
                 key={item.id}
