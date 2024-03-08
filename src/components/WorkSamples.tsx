@@ -42,46 +42,46 @@ const workSamplesItems = [
       "اوقات شرعی",
     ],
   },
-  {
-    id: 2,
-    title: "امداد خودرو اعتماد",
-    img: EmdadKhodro,
-    link: "https://emdadkhodroetemad.ir/",
-    imgResponsive: EmdadkhodroResponsive,
-    pages: [
-      "صفحه اصلی",
-      "تصاویر",
-      "استخدام",
-      "درباره ما",
-      "خدمات ما",
-      "تماس با ما",
-      "استعلام مجوز",
-    ],
-  },
-  {
-    id: 3,
-    title: "لندینگ پیج تگ استار",
-    img: Tagstar,
-    link: "https://webship.ir/tagstar",
-    imgResponsive: TagstarResponsive,
-    pages: ["صفحه اصلی", "خدمات", "مشتریان", "درباره ما", "تماس با ما"],
-  },
-  {
-    id: 4,
-    title: "شرکت نرم افزاری کلیک",
-    img: ClickDigikala,
-    link: "https://clickmis.net/digikala",
-    imgResponsive: DigikalaResponsive,
-    pages: [
-      "دیجی کالا",
-      "صفحه 404",
-      "محتوای مستندات Api",
-      "راهنمای خودآموز و مستندات",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "امداد خودرو اعتماد",
+  //   img: EmdadKhodro,
+  //   link: "https://emdadkhodroetemad.ir/",
+  //   imgResponsive: EmdadkhodroResponsive,
+  //   pages: [
+  //     "صفحه اصلی",
+  //     "تصاویر",
+  //     "استخدام",
+  //     "درباره ما",
+  //     "خدمات ما",
+  //     "تماس با ما",
+  //     "استعلام مجوز",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   title: "لندینگ پیج تگ استار",
+  //   img: Tagstar,
+  //   link: "https://webship.ir/tagstar",
+  //   imgResponsive: TagstarResponsive,
+  //   pages: ["صفحه اصلی", "خدمات", "مشتریان", "درباره ما", "تماس با ما"],
+  // },
+  // {
+  //   id: 4,
+  //   title: "شرکت نرم افزاری کلیک",
+  //   img: ClickDigikala,
+  //   link: "https://clickmis.net/digikala",
+  //   imgResponsive: DigikalaResponsive,
+  //   pages: [
+  //     "دیجی کالا",
+  //     "صفحه 404",
+  //     "محتوای مستندات Api",
+  //     "راهنمای خودآموز و مستندات",
+  //   ],
+  // },
 ];
 const WorkSamples = () => {
-  const smallSize = useMediaQuery("(max-width:600px)");
+  const smallSize = useMediaQuery("(max-width:900px)");
   return (
     <>
       <Heading title="نمونه کارها" borderWidth="70%" id="workSamples" />
@@ -94,7 +94,7 @@ const WorkSamples = () => {
           style: {
             display: "inline-flex",
             height: "40px",
-            top: "370px",
+            top: "380px",
           },
         }}
         navButtonsProps={{
@@ -127,7 +127,7 @@ const WorkSamples = () => {
           <Box
             sx={{
               display: "grid",
-              gap: { xs: "70px", md: "0" },
+              gap: { xs: "100px", md: "0" },
               gridTemplateColumns: { xs: "1fr", md: "2fr 4fr" },
             }}
             key={workSample.id}
@@ -171,8 +171,7 @@ const WorkSamples = () => {
                 sx={{
                   display: "grid",
                   gridTemplateColumns: {
-                    xs: "repeat(2,1fr)",
-                    sm: "repeat(3,1fr)",
+                    xs: "1fr",
                     md: workSample.pages.length <= 4 ? "1fr" : "repeat(2,1fr)",
                   },
                 }}
@@ -207,7 +206,6 @@ const WorkSamples = () => {
                         primary={name}
                         sx={{
                           color: "#fff",
-                          textWrap: "nowrap",
                           textAlign: "right",
                           fontSize: "1.2rem",
                         }}
@@ -224,8 +222,8 @@ const WorkSamples = () => {
                 sx={{
                   color: "#fff",
                   padding: "10px 20px",
-                  width: { xs: "100%", md: "150px" },
-                  marginRight: { xs: "0 20px", md: "5px" },
+                  width: { xs: "auto", md: "150px" },
+                  margin: { xs: "0 5px", sm: "0 5px 0 0" },
                 }}
               >
                 نمایش سایت
@@ -257,7 +255,7 @@ const WorkSamples = () => {
                     zIndex: "2",
                     overflow: "hidden",
                     width: { xs: "100px", sm: "140px" },
-                    right: { xs: "-10px", sm: "-50px" },
+                    right: { xs: "-9px", sm: "-50px" },
                     height: { xs: "230px", sm: "300px" },
                     position: { xs: "absolute", md: "relative" },
                     transform: {
@@ -302,7 +300,7 @@ const WorkSamples = () => {
                   sx={{
                     overflow: "hidden",
                     position: "relative",
-                    width: { xs: "300px", sm: "400px" },
+                    width: { xs: "290px", sm: "400px" },
                     height: { xs: "300px", sm: "400px" },
                   }}
                 >
@@ -315,7 +313,7 @@ const WorkSamples = () => {
                     sx={{
                       textAlign: "right",
                       position: "relative",
-                      width: { xs: "303px", sm: "400px" },
+                      width: { xs: "293px", sm: "400px" },
                       height: { xs: "217px", sm: "285px" },
                       overflow: "hidden",
                       "&:hover img": {
@@ -329,7 +327,7 @@ const WorkSamples = () => {
                       sx={{
                         width: "100%",
                         height: "100%",
-                        padding: "15px",
+                        padding: "14px 11px 15px 15px",
                         objectFit: "cover",
                         objectPosition: " top center",
                         transition: "all 4s ease-in-out",
