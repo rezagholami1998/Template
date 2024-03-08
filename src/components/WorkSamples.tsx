@@ -42,43 +42,43 @@ const workSamplesItems = [
       "اوقات شرعی",
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "امداد خودرو اعتماد",
-  //   img: EmdadKhodro,
-  //   link: "https://emdadkhodroetemad.ir/",
-  //   imgResponsive: EmdadkhodroResponsive,
-  //   pages: [
-  //     "صفحه اصلی",
-  //     "تصاویر",
-  //     "استخدام",
-  //     "درباره ما",
-  //     "خدمات ما",
-  //     "تماس با ما",
-  //     "استعلام مجوز",
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   title: "لندینگ پیج تگ استار",
-  //   img: Tagstar,
-  //   link: "https://webship.ir/tagstar",
-  //   imgResponsive: TagstarResponsive,
-  //   pages: ["صفحه اصلی", "خدمات", "مشتریان", "درباره ما", "تماس با ما"],
-  // },
-  // {
-  //   id: 4,
-  //   title: "شرکت نرم افزاری کلیک",
-  //   img: ClickDigikala,
-  //   link: "https://clickmis.net/digikala",
-  //   imgResponsive: DigikalaResponsive,
-  //   pages: [
-  //     "دیجی کالا",
-  //     "صفحه 404",
-  //     "محتوای مستندات Api",
-  //     "راهنمای خودآموز و مستندات",
-  //   ],
-  // },
+  {
+    id: 2,
+    title: "امداد خودرو اعتماد",
+    img: EmdadKhodro,
+    link: "https://emdadkhodroetemad.ir/",
+    imgResponsive: EmdadkhodroResponsive,
+    pages: [
+      "صفحه اصلی",
+      "تصاویر",
+      "استخدام",
+      "درباره ما",
+      "خدمات ما",
+      "تماس با ما",
+      "استعلام مجوز",
+    ],
+  },
+  {
+    id: 3,
+    title: "لندینگ پیج تگ استار",
+    img: Tagstar,
+    link: "https://webship.ir/tagstar",
+    imgResponsive: TagstarResponsive,
+    pages: ["صفحه اصلی", "خدمات", "مشتریان", "درباره ما", "تماس با ما"],
+  },
+  {
+    id: 4,
+    title: "شرکت نرم افزاری کلیک",
+    img: ClickDigikala,
+    link: "https://clickmis.net/digikala",
+    imgResponsive: DigikalaResponsive,
+    pages: [
+      "دیجی کالا",
+      "صفحه 404",
+      "محتوای مستندات Api",
+      "راهنمای خودآموز و مستندات",
+    ],
+  },
 ];
 const WorkSamples = () => {
   const smallSize = useMediaQuery("(max-width:900px)");
@@ -327,9 +327,9 @@ const WorkSamples = () => {
                       sx={{
                         width: "100%",
                         height: "100%",
-                        padding: "14px 11px 15px 15px",
                         objectFit: "cover",
                         objectPosition: " top center",
+                        padding: "14px 11px 15px 15px",
                         transition: "all 4s ease-in-out",
                       }}
                     />
