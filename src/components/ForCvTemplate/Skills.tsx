@@ -1,43 +1,10 @@
+import Heading from "./Heading";
 import { Typography, Box, Grid } from "@mui/material";
 import GroupShape from "@/assets/images/Group-shape.svg";
 const Skills = () => {
   return (
     <>
-      <Box
-        id="skills"
-        sx={{ display: "flex", alignItems: "center", gap: "16px" }}
-      >
-        <Typography
-          variant="h5"
-          component="h3"
-          sx={{
-            color: "#fff",
-            fontWeight: "500",
-            textWrap: "nowrap",
-            fontSize: "1.5rem",
-          }}
-        >
-          <Typography
-            component="span"
-            sx={{
-              height: "28px",
-              color: "#C778DD",
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-            }}
-          >
-            #&nbsp;
-          </Typography>
-          مهارت ها
-        </Typography>
-        <Box
-          sx={{
-            width: { xs: "100%", sm: "70%" },
-            height: "1px",
-            background: "#C778DD",
-          }}
-        ></Box>
-      </Box>
+      <Heading title="مهارت ها" borderWidth="85%" id="skills" />
       <Grid
         container
         sx={{

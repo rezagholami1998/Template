@@ -1,3 +1,4 @@
+import Heading from "./Heading";
 import Boy2 from "@/assets/images/Boy2.png";
 import Dots from "@/assets/images/Dots.svg";
 import Dots2 from "@/assets/images/Dots2.svg";
@@ -5,45 +6,11 @@ import { Typography, Box, Grid } from "@mui/material";
 const AboutMe = () => {
   return (
     <>
-      <Box
-        id="aboutMe"
-        sx={{ display: "flex", alignItems: "center", gap: "16px" }}
-      >
-        <Typography
-          variant="h5"
-          component="h3"
-          sx={{
-            fontSize: "1.5rem",
-            fontWeight: "500",
-            color: "#fff",
-            textWrap: "nowrap",
-          }}
-        >
-          <Typography
-            component="span"
-            sx={{
-              height: "28px",
-              color: "#C778DD",
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-            }}
-          >
-            #&nbsp;
-          </Typography>
-          درباره من
-        </Typography>
-        <Box
-          sx={{
-            width: { xs: "100%", sm: "40%" },
-            height: "1px",
-            background: "#C778DD",
-          }}
-        ></Box>
-      </Box>
+      <Heading title="درباره من" borderWidth="55%" id="aboutMe" />
       <Grid
         container
         sx={{
-          p: { xs: "50px 0", md: " 0 0 50px" },
+          p: { xs: "50px 0", md: "0" },
           justifyContent: "space-evenly",
           alignItems: "center",
           position: "relative",

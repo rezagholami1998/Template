@@ -1,13 +1,8 @@
-import {
-  List,
-  Box,
-  Typography,
-  ListItemIcon,
-  ListItemText,
-} from "@mui/material";
+import Heading from "./Heading";
 import { motion } from "framer-motion";
 import TickIcon from "../../assets/images/Tick.svg";
 import { useInView } from "react-intersection-observer";
+import { List, Box, ListItemIcon, ListItemText } from "@mui/material";
 const certificateItem = [
   "کارشناسی مهندسی کامپیوتر دانشگاه دولتی تربت حیدریه",
   "سرتیفیکیت کالج توربو فرانت شرکت نرم افزاری پارت",
@@ -20,33 +15,7 @@ const Certificate = () => {
   });
   return (
     <>
-      <Box sx={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <Typography
-          variant="h5"
-          component="h3"
-          id="certificates"
-          sx={{
-            color: "#fff",
-            fontWeight: "500",
-            textWrap: "nowrap",
-            fontSize: "1.5rem",
-          }}
-        >
-          <Typography
-            component="span"
-            sx={{
-              height: "28px",
-              color: "#C778DD",
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-            }}
-          >
-            #&nbsp;
-          </Typography>
-          گواهینامه ها
-        </Typography>
-        <Box sx={{ width: "100%", height: "1px", background: "#C778DD" }}></Box>
-      </Box>
+      <Heading title="گواهینامه ها" borderWidth="100%" id="certificates" />
       <Box
         ref={ref}
         sx={{
