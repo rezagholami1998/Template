@@ -10,7 +10,7 @@ import {
   useMediaQuery,
   ListItemButton,
 } from "@mui/material";
-import Heading from "./ForCvTemplate/Heading";
+import Heading from "./Heading";
 import TickIcon from "../assets/images/Tick.svg";
 import Mobile from "../assets/images/Mobile.png";
 import LapTop from "../assets/images/LapTop.png";
