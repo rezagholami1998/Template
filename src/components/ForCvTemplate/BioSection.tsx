@@ -1,4 +1,3 @@
-import Dots from "@/assets/images/Dots.svg";
 import Dots3 from "@/assets/images/Dots3.svg";
 import BoyImage from "@/assets/images/Boy.png";
 import Shape1 from "@/assets/images/Shap1.svg";
