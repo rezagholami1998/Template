@@ -11,7 +11,7 @@ const Footer = () => {
           sx={{
             width: "100%",
             height: "1px",
-            background: "#C778DD",
+            background: "#00B3FF",
           }}
         ></Box>
         <Typography
@@ -30,7 +30,7 @@ const Footer = () => {
           sx={{
             width: "100%",
             height: "1px",
-            background: "#C778DD",
+            background: "#00B3FF",
           }}
         ></Box>
       </Box>

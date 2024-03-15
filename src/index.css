@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: #c778dd rgba(0, 0, 0, 0.5);
+  scrollbar-color: #00b3ff rgba(0, 0, 0, 0.5);
 }
 @layer base {
   @font-face {
@@ -81,17 +81,6 @@ img {
 }
 .slideInUp {
   animation: slideInUp 1.5s infinite alternate;
-}
-@keyframes textShadow {
-  from {
-    text-shadow: none;
-  }
-  to {
-    text-shadow: 3px 2px 1px #c778dd;
-  }
-}
-.textShadow {
-  animation: textShadow 1s infinite alternate;
 }
 .index-module_type__E-SaG::after {
   content: none !important;

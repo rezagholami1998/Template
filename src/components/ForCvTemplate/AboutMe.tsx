@@ -100,7 +100,7 @@ const AboutMe = () => {
               sx={{
                 width: { xs: "100%", md: "100%" },
                 height: "2px",
-                background: "#C778DD",
+                background: "#00B3FF",
                 transform: {
                   xs: "translate(0px, -10px)",
                   sm: "translate(-0px, -10px)",

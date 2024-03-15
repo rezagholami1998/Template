@@ -1,4 +1,5 @@
 import Dots from "@/assets/images/Dots.svg";
+import Dots3 from "@/assets/images/Dots3.svg";
 import BoyImage from "@/assets/images/Boy.png";
 import Shape1 from "@/assets/images/Shap1.svg";
 import { TypeAnimation } from "react-type-animation";
@@ -52,7 +53,7 @@ const BioSection = () => {
                 variant="h3"
                 component="span"
                 sx={{
-                  color: "#C778DD",
+                  color: "#00B3FF",
                   fontWeight: "inherit",
                   fontSize: "inherit",
                 }}
@@ -65,7 +66,7 @@ const BioSection = () => {
                 variant="h3"
                 component="span"
                 sx={{
-                  color: "#C778DD",
+                  color: "#00B3FF",
                   fontWeight: "inherit",
                   fontSize: "inherit",
                 }}
@@ -121,11 +122,11 @@ const BioSection = () => {
             <Box component="img" src={BoyImage} sx={{ width: "400px" }}></Box>
             <Box
               component="img"
-              src={Dots}
+              src={Dots3}
               className="slideInRight"
               sx={{
                 position: "absolute",
-                right: { xs: "0", lg: "45px" },
+                right: { xs: "0", lg: "25px" },
                 bottom: { xs: "100px", lg: "130px" },
               }}
             />
@@ -221,7 +222,6 @@ const BioSection = () => {
             width: "fit-content",
             border: "1px solid #ABB2BF",
           }}
-          className="textShadow"
         >
           <Box
             component="img"

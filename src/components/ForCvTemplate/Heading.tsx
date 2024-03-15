@@ -16,7 +16,7 @@ const Heading = ({ title = "", borderWidth = "0", id = "" }) => {
           component="span"
           sx={{
             height: "28px",
-            color: "#C778DD",
+            color: "#00B3FF",
             fontSize: "1.5rem",
             fontWeight: "bold",
           }}
@@ -29,7 +29,7 @@ const Heading = ({ title = "", borderWidth = "0", id = "" }) => {
         sx={{
           width: { xs: "100%", sm: `${borderWidth}` },
           height: "1px",
-          background: "#C778DD",
+          background: "#00B3FF",
         }}
       ></Box>
     </Box>

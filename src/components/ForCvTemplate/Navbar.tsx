@@ -76,7 +76,7 @@ const Navbar = (props: Props) => {
                   component="span"
                   sx={{
                     height: "28px",
-                    color: "#C778DD",
+                    color: "#00B3FF",
                     fontWeight: "bold",
                     fontSize: "1.3rem",
                     display: "inline-block",
@@ -122,8 +122,8 @@ const Navbar = (props: Props) => {
               component="img"
               src={Logo}
               sx={{
-                width: "40px",
-                height: "30px",
+                width: "55px",
+                height: "35px",
                 display: "flex",
               }}
             />
@@ -153,7 +153,7 @@ const Navbar = (props: Props) => {
                   borderBottom: "3px solid transparent",
                   "&:hover": {
                     background: "transparent",
-                    borderBottom: "3px solid #C778DD",
+                    borderBottom: "3px solid #00B3FF",
                   },
                 }}
               >
@@ -161,7 +161,7 @@ const Navbar = (props: Props) => {
                 <Typography
                   sx={{
                     height: "28px",
-                    color: "#C778DD",
+                    color: "#00B3FF",
                     fontSize: "1.3rem",
                     fontWeight: "bold",
                   }}

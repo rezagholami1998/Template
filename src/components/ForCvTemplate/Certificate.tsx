@@ -24,7 +24,7 @@ const Certificate = () => {
           overflow: "hidden",
         }}
       >
-        <List sx={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        <List sx={{ display: "flex", flexDirection: "column", gap: "35px" }}>
           {certificateItem.map((text, i) => (
             <motion.div
               key={i}
@@ -43,7 +43,7 @@ const Certificate = () => {
                 <Box
                   component="img"
                   src={TickIcon}
-                  sx={{ color: "#C778DD", width: "100%" }}
+                  sx={{ color: "#00B3FF", width: "100%" }}
                 />
               </ListItemIcon>
               <ListItemText

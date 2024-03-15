@@ -104,7 +104,7 @@ const WorkSamples = () => {
         }}
         indicatorIconButtonProps={{
           style: {
-            color: "#C778DD",
+            color: "#00B3FF",
             opacity: 0.5,
           },
         }}
@@ -117,7 +117,7 @@ const WorkSamples = () => {
         }}
         activeIndicatorIconButtonProps={{
           style: {
-            color: "#C778DD",
+            color: "#00B3FF",
             opacity: "1",
           },
         }}
@@ -158,7 +158,7 @@ const WorkSamples = () => {
                 <Typography
                   component="span"
                   sx={{
-                    color: "#C778DD",
+                    color: "#00B3FF",
                     fontWeight: "700",
                     fontSize: "1.5rem",
                     textWrap: "nowrap",
@@ -199,7 +199,7 @@ const WorkSamples = () => {
                         <Box
                           component="img"
                           src={TickIcon}
-                          sx={{ color: "#C778DD", width: "100%" }}
+                          sx={{ color: "#00B3FF", width: "100%" }}
                         />
                       </ListItemIcon>
                       <ListItemText
