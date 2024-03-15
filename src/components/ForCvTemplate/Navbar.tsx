@@ -195,7 +195,7 @@ const Navbar = (props: Props) => {
               padding: "16px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between",
+              justifyContent: "end",
             }}
           >
             <Box
@@ -208,15 +208,6 @@ const Navbar = (props: Props) => {
                 "&:hover": {
                   cursor: "pointer",
                 },
-              }}
-            />
-            <Box
-              component="img"
-              src={Logo}
-              sx={{
-                width: "40px",
-                height: "30px",
-                display: "flex",
               }}
             />
           </Box>
